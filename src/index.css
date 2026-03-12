@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Saira", sans-serif;
+}
+
+.commonbgcolor{
+  background: linear-gradient(to right, #3368fa, #4247a1);
+  color: white !important;
+}
