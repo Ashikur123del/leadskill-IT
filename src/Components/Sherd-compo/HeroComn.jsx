@@ -19,6 +19,6 @@ const HeroComn = ({
   );
 };
 
-export default HeroComn;
+export default HeroComn; 
         
   
