@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
 
           <FooterColumn title="About" links={['Our History', 'Vision & Mission', 'Leadership', 'Business Model', 'Our Innovation']} />
-          <FooterColumn title="Solutions" links={['Eduman', 'Educare']} />
+          <FooterColumn title="Solutions" links={['MentorERP', 'DailyLedger']} />
           <FooterColumn title="Investors" links={['Code of Conduct', 'Corporate Partners', 'Our Clients',  'Investors Query']} />
           <FooterColumn title="Important" links={['Career', 'Blog', 'Job List', 'General Enquiries']} />
         </div>

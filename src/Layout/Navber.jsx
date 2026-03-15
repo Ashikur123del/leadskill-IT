@@ -50,8 +50,9 @@ const Navbar = () => {
       path: "/investors",
       hasDropdown: true,
       dropdown: [
-        { name: "Our Clients", path: "/clients" },
-        { name: "Discount Partners", path: "/partners" },
+        { name: "Code of Conduct", path: "/code-of-conduct" },
+        { name: "Corporate Partners", path: "/partners" },
+        { name: "Our Clients", path: "/clients" },   
         { name: "Investors Query", path: "/investors-query" },
       ],
     },

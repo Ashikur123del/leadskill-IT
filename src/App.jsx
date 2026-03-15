@@ -6,6 +6,11 @@ import VisionMissionss from './Pages/VisionMissionss';
 import Leadership from './Pages/Leadership';
 import BusinessModels from './Pages/BusinessModels';
 import OurInnovation from './Pages/OurInnovation';
+import Mentorerpss from './Pages/Mentorerpss';
+import DailyLedgers from './Pages/DailyLedgers';
+import CodeOfConduct from './Pages/CodeOfConduct';
+import OurCorporatePartners from './Pages/OurCorporatePartners';
+import OurClients from './Pages/OurClients';
 
 export default function App() {
   return (
@@ -17,6 +22,11 @@ export default function App() {
         <Route path='leadership' element={<Leadership />} />
         <Route path='business-model' element={<BusinessModels/>} />
         <Route path='innovation' element={<OurInnovation/>} />
+        <Route path='erp' element={<Mentorerpss />} />
+        <Route path='daily' element={<DailyLedgers />} />
+        <Route path='code-of-conduct' element={<CodeOfConduct />}/>
+        <Route path='partners' element={<OurCorporatePartners/>}/>
+        <Route path='clients' element={<OurClients/>}/>
       </Route>
     </Routes>
   );
