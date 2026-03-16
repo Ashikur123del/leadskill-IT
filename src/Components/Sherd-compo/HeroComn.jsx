@@ -7,7 +7,7 @@ const HeroComn = ({
   height = "h-64 md:h-96 lg:h-full",                          
 }) => {
   return (
-    <div className="relative w-full overflow-hidden pt-20">
+    <div className="relative w-full overflow-hidden">
       {/* Image */}
       <img 
         src={imageSrc} 

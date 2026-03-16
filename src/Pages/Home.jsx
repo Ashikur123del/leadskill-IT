@@ -7,6 +7,7 @@ import OurTeamMember from '../Components/HomeComponent/OurTeamMember'
 import ClientRating from '../Components/HomeComponent/ClicentRatting'
 
 
+
 const Home = () => {
   return (
     <div>
