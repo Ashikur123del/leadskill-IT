@@ -26,8 +26,8 @@ const ClientRating = () => {
             <span className="text-[#4F46E5] font-bold uppercase tracking-[0.2em] text-[11px] bg-[#4F46E5]/10 px-4 py-1 rounded-full">
               Testimonials
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold mt-4 text-[#0F172A]">
-              Our clients trust us
+            <h2 className="text-4xl md:text-5xl font-bold mt-4 text-[#0F172A] ">
+              Our clients <span className='text-pink-500'>trust us</span>
             </h2>
           </div>
           

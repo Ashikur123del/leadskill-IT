@@ -18,7 +18,7 @@ const Platform = () => {
   const nextRef = useRef(null);
 
   return (
-    <section className="py-24 bg-[#1a1a1a] text-white overflow-hidden relative">
+    <section className="py-10 md:py-24 bg-[#1a1a1a] text-white overflow-hidden relative">
       <div className="container mx-auto px-6 text-center">
         {/* Header Section */}
         <motion.div 
@@ -28,7 +28,7 @@ const Platform = () => {
           className="mb-16"
         >
           <p className="text-purple-400 font-bold uppercase tracking-[0.2em] text-sm mb-4">What we do?</p>
-          <h2 className="text-5xl lg:text-6xl font-extrabold leading-tight">
+          <h2 className="text-4xl lg:text-6xl font-extrabold leading-tight">
             Opportunities in <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Bangladesh</span>
           </h2>
         </motion.div>

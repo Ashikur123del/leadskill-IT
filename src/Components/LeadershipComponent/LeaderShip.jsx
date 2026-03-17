@@ -47,7 +47,7 @@ const memberVariants = {
 
 const LeaderShip = () => {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-b from-base-200/40 to-base-100 relative overflow-hidden">
+    <section className="py-10 md:py-32 bg-gradient-to-b from-base-200/40 to-base-100 relative overflow-hidden">
       <div className="container mx-auto px-5 sm:px-6 lg:px-8 max-w-6xl relative z-10">
         <motion.div
           initial={{ opacity: 0, y: -30 }}
@@ -78,7 +78,7 @@ const LeaderShip = () => {
               <motion.article
                 key={member.name}
                 variants={memberVariants}
-                className={`grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center ${isEven ? '' : 'lg:flex-row-reverse'}`}
+                className={`grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-16 items-center ${isEven ? '' : 'lg:flex-row-reverse'}`}
               >
                 <div className={`lg:col-span-5 flex ${isEven ? 'lg:justify-start' : 'lg:justify-end'} justify-center`}>
                   <motion.div
@@ -122,11 +122,6 @@ const LeaderShip = () => {
             );
           })}
         </motion.div> 
-        <div className="mt-24 md:mt-32 text-center">
-          <p className="text-base-content/60 italic text-sm md:text-base tracking-wide">
-            Committed to redefining education through technology, integrity, and excellence.
-          </p>
-        </div>
       </div>
     </section>
   );

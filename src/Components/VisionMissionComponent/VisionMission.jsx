@@ -28,7 +28,7 @@ const VisionMission = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto py-30 px-6 bg-base-200/30">
+    <section className="max-w-7xl mx-auto py-10 md:py-30 px-6 bg-base-200/30">
       <div className="space-y-1 gap-1 overflow-hidden rounded-[2rem] shadow-2xl">
         {sections.map((item, index) => (
           <div 

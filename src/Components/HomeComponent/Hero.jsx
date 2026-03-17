@@ -32,7 +32,7 @@ const Hero = () => {
   ];
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-[600px]  md:h-screen">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
         effect="fade"
@@ -58,8 +58,17 @@ const Hero = () => {
           </SwiperSlide>
         ))}
 
-        <div className="my-prev absolute left-5 top-1/2 z-30 cursor-pointer text-white w-12 h-12 bg-white/10 flex items-center justify-center rounded-full backdrop-blur-md hover:bg-white/30 transition-all"><FaChevronLeft size={20} /></div>
-        <div className="my-next absolute right-5 top-1/2 z-30 cursor-pointer text-white w-12 h-12 bg-white/10 flex items-center justify-center rounded-full backdrop-blur-md hover:bg-white/30 transition-all"><FaChevronRight size={20} /></div>
+       <div className="my-prev absolute left-5 top-1/2 z-30 cursor-pointer text-white 
+w-12 h-12 bg-white/10 hidden md:flex items-center justify-center 
+rounded-full backdrop-blur-md hover:bg-white/30 transition-all">
+  <FaChevronLeft size={20} />
+</div>
+
+<div className="my-next absolute right-5 top-1/2 z-30 cursor-pointer text-white 
+w-12 h-12 bg-white/10 hidden md:flex items-center justify-center 
+rounded-full backdrop-blur-md hover:bg-white/30 transition-all">
+  <FaChevronRight size={20} />
+</div>
       </Swiper>
 
       {/* স্ক্রল-টু-টপ বাটন */}

@@ -22,16 +22,16 @@ const OurTeamMember = () => {
   const swiperRef = useRef(null);
 
   return (
-    <section className="bg-[#111111] text-white py-24 px-6 min-h-screen">
+    <section className="bg-[#111111] text-white py-10 md:py-24 px-6 min-h-screen">
       <div className="max-w-7xl mx-auto">
         
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row justify-between items-end mb-20 gap-10">
-          <div className="max-w-xl">
+          <div className="max-w-xl mx-auto">
             <span className="commonbgcolor text-[10px] font-bold px-3 py-1 rounded-sm uppercase tracking-widest mb-4 inline-block">
               Our Team Member
             </span>
-            <h2 className="text-5xl md:text-6xl font-bold leading-tight mt-2 tracking-tight">
+            <h2 className="text-4xl md:text-6xl font-bold  mt-2 text-pink-500 ">
               Our team provide <br /> the best service
             </h2>
           </div>

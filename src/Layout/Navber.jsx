@@ -19,18 +19,18 @@ const Navbar = () => {
 
   const menuItems = [
     { name: "Home", path: "/", hasDropdown: false },
-    { name: "About", path: "/about", hasDropdown: true, dropdown: [{ name: "Our History", path: "/history" }, { name: "Vision & Mission", path: "/vision-mission" }, { name: "Leadership", path: "/leadership" }, { name: "Business Model", path: "/business-model" }, { name: "Our Innovation", path: "/innovation" }] },
-    { name: "Solutions", path: "/services", hasDropdown: true, dropdown: [{ name: "ERP Solutions", path: "/erp" }, { name: "DailyLedger", path: "/daily" }] },
-    { name: "Investors", path: "/investors", hasDropdown: true, dropdown: [{ name: "Code of Conduct", path: "/code-of-conduct" }, { name: "Corporate Partners", path: "/partners" }, { name: "Our Clients", path: "/clients" }, { name: "Investors Query", path: "/investors-query" }] },
-    { name: "Media", path: "/media", hasDropdown: true, dropdown: [{ name: "Blog", path: "/blogs" }] },
-    { name: "Career", path: "/career", hasDropdown: true, dropdown: [{ name: "Career", path: "/career" }] },
-    { name: "Contact", path: "/contact", hasDropdown: true, dropdown: [{ name: "General Enquiries", path: "/general-enquiries" }, { name: "Job List", path: "/job-list" }] },
+    { name: "About", hasDropdown: true, dropdown: [{ name: "Our History", path: "/history" }, { name: "Vision & Mission", path: "/vision-mission" }, { name: "Leadership", path: "/leadership" }, { name: "Business Model", path: "/business-model" }, { name: "Our Innovation", path: "/innovation" }] },
+    { name: "Solutions",  hasDropdown: true, dropdown: [{ name: "MentorERP Solutions", path: "/erp" }, { name: "DailyLedger", path: "/daily" }] },
+    { name: "Investors",  hasDropdown: true, dropdown: [{ name: "Code of Conduct", path: "/code-of-conduct" }, { name: "Corporate Partners", path: "/partners" }, { name: "Our Clients", path: "/clients" }, { name: "Investors Query", path: "/investors-query" }] },
+    { name: "Media", hasDropdown: true, dropdown: [{ name: "Blog", path: "/blogs" }] },
+    { name: "Career", hasDropdown: true, dropdown: [{ name: "Career", path: "/career" }] },
+    { name: "Contact",hasDropdown: true, dropdown: [{ name: "General Enquiries", path: "/general-enquiries" }, { name: "Job List", path: "/job-list" }] },
   ];
 
   return (
     <motion.nav
       animate={{
-        backgroundColor: scrolled ? "#57C785" : "#2A7B9B",
+        backgroundColor: scrolled ? "#6B00F3" : "#009150",
         borderRadius: scrolled ? "0px" : "50px",
         marginTop: scrolled ? "0px" : "15px",
         padding: scrolled ? "15px 5%" : "10px 40px",
@@ -63,7 +63,7 @@ const Navbar = () => {
                   ))}
                 </div>
               </div>
-            )}
+            )}   
           </div>
         ))}
         <Link to="/contact" className="flex items-center gap-2 border border-white px-5 py-2 rounded-full font-bold text-[14px] hover:bg-white hover:text-[#2A7B9B] transition-all whitespace-nowrap">

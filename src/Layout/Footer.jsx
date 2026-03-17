@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="commonbgcolor text-white pt-24 pb-12 px-6 relative overflow-hidden">
+    <footer className="commonbgcolor text-white pt-10  md:pt-24 pb-12 px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16 mb-24">
           

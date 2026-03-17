@@ -46,7 +46,7 @@ const EmpoweringFuture = () => {
   };
 
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-10 md:py-24 bg-white overflow-hidden">
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -98,7 +98,7 @@ const EmpoweringFuture = () => {
           <h4 className="text-purple-600 font-bold mb-4 uppercase tracking-[0.2em] text-xs">
             Who We Are
           </h4>
-          <h2 className="text-5xl lg:text-6xl font-extrabold text-gray-900 mb-8 leading-[1.1]">
+          <h2 className="text-3xl lg:text-6xl font-extrabold text-gray-900 mb-8 leading-[1.1]">
             Empowering Brand <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
               Growth Together

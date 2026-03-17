@@ -47,25 +47,21 @@ const SkillsSection = () => {
   ].map((card, index) => (
     <motion.div
       key={index}
-      initial={{ x: 50, opacity: 0 }} // মোবাইলের জন্য x: 50 যাতে খুব বেশি না কাঁপে
+      initial={{ x: 50, opacity: 0 }} 
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.7, delay: index * 0.2, ease: "easeOut" }}
       className="group relative bg-white p-6 md:p-8 rounded-3xl shadow-lg border-l-4 border-transparent hover:border-purple-600 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
     >
-      {/* ফ্লেক্স-ডাইরেকশন মোবাইলে প্রয়োজনে পরিবর্তন করার জন্য */}
+     
       <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-4">
         <span className="text-4xl">{card.icon}</span>
         <h2 className="text-xl md:text-2xl font-bold text-gray-900 leading-tight">
           {card.title}
         </h2>
       </div>
-      
-      {/* প্যাডিং রেসপন্সিভ করা হয়েছে: pl-0 (মোবাইলে) এবং md:pl-14 (ডেস্কটপে) */}
       <p className="text-gray-600 text-sm md:text-base leading-relaxed pl-0 md:pl-14 font-bold">
         {card.text}
       </p>
-      
-      {/* Decorative effect */}
       <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-10 transition-opacity">
         <div className="w-16 h-16 bg-purple-600 rounded-full blur-2xl"></div>
       </div>

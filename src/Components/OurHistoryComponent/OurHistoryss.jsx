@@ -13,7 +13,7 @@ const milestones = [
 
 const Journey = () => {
   return (
-    <section className="py-40 bg-[#E0F2F1] px-6 overflow-hidden">
+    <section className=" py-10 md:py-40 bg-[#E0F2F1] px-6 overflow-hidden">
       <div className="max-w-5xl mx-auto text-center">
         <motion.h2 
           initial={{ opacity: 0, y: -20 }}

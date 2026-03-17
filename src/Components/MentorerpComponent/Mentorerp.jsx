@@ -42,14 +42,14 @@ const Mentorerp = () => {
   ];
 
   return (
-    <section className="py-16 px-5 overflow-hidden">
+    <section className=" py-10 md:py-16 px-5 overflow-hidden">
       {/* Top Content */}
       <div className="text-center max-w-5xl mx-auto mb-16">
-        <img src="./logo.png" alt="Eduman Logo" className="h-24 mx-auto mb-6" />
+        <img src="./logo.png" alt="Eduman Logo" className=" h-16 md:h-24 mx-auto mb-6" />
         <h3 className="text-[#2b3d7a] text-3xl font-bold mb-6">
           A Comprehensive Education Management System
         </h3>
-        <p className="text-gray-700 text-lg text-justify leading-relaxed">
+        <p className="text-gray-700 text-lg text-center md:text-justify leading-relaxed">
           MentorERP is a cloud-based school management system for small to mid-sized educational institutions. 
           It centralizes academic and administrative tasks like attendance tracking, exam scheduling, 
           grade publication, fee collection, and staff management.

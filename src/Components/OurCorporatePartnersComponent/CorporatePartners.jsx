@@ -8,11 +8,11 @@ const partners = [
 
 const CorporatePartners = () => {
   return (
-    <section className="pb-20 pt-40 px-4">
+    <section className=" pb-10 md:pb-20 pt-30 md:pt-40 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-green-800 text-4xl font-bold text-center mb-16">Our Corporate Partners</h2>
+        <h2 className="text-green-800 text-4xl font-bold text-center mb-6 md:mb-16">Our Corporate Partners</h2>
      
-        <div className="flex flex-col items-center gap-6 mb-20">
+        <div className="flex flex-col items-center gap-6 mb-10 md:mb-20">
         
           <div className="flex flex-wrap justify-center gap-6">
             {partners.slice(0, 2).map((partner, index) => (

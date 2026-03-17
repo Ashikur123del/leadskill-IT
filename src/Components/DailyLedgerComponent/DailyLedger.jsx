@@ -32,9 +32,9 @@ const cards = [
 
 const DailyLedger = () => {
   return (
-    <section className="py-20 max-w-5xl mx-auto px-4">
+    <section className="py-10 md:py-20 max-w-5xl mx-auto px-4">
       {/* Header Section */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-3 md:mb-16">
         <h2 className="text-4xl md:text-7xl text-[#4C4AC3] font-bold">HoushVara</h2>
         <div className="h-[5px] w-32 commonbgcolor rounded-2xl mx-auto mt-3"></div>
         <p className="text-lg py-3 font-semibold">Empowering Education with Purpose and Protection</p>
@@ -66,7 +66,7 @@ const DailyLedger = () => {
       </div>
 
       {/* Our Community Section */}
-      <div className="text-center py-10">
+      <div className="text-center py-5 md:py-10">
         <h2 className="text-4xl font-bold text-[#2b3d7a]">Our Community</h2>
         <div className="h-[5px] w-32 commonbgcolor mx-auto mt-2 rounded-2xl"></div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-10">

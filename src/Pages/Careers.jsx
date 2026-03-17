@@ -6,7 +6,7 @@ import HiringProcess from '../Components/HiringProcessComponent/HiringProcess'
 const Careers = () => {
   return (
     <div>
-        <HeroComn imageSrc='./career.webp'/>
+        <HeroComn imageSrc='./career .png'/>
         <Career />
         <HiringProcess />
     </div>
