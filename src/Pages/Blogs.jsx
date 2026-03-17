@@ -5,7 +5,7 @@ import HeroComn from '../Components/Sherd-compo/HeroComn'
 const Blogs = () => {
   return (
     <div>
-        <HeroComn imageSrc='./eduman-7.webp'/>
+        <HeroComn imageSrc='./blog .png'/>
         <Blog />
     </div>
   )

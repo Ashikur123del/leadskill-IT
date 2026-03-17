@@ -16,6 +16,7 @@ import CustomCursor from './Components/MouseCursorComponent/CustomCursor';
 import Blogs from './Pages/Blogs';
 import Careers from './Pages/Careers';
 import GeneralEnquiriess from './Pages/GeneralEnquiriess';
+import JobLists from './Pages/JobLists';
 
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
           <Route path='blogs' element={<Blogs/>}/>
           <Route path='career' element={<Careers/>}/>
           <Route path='general-enquiries' element={<GeneralEnquiriess/>}/>
+          <Route path='job-list' element={<JobLists/>}/>
         </Route>
       </Routes>
     </>

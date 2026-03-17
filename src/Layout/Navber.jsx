@@ -81,7 +81,7 @@ const Navbar = () => {
         {mobileMenuOpen && (
           <motion.div 
             initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }}
-            className="fixed inset-0 z-[101] bg-gradient-to-br from-[#2A7B9B] to-[#1C314F] text-white p-6 overflow-y-auto lg:hidden"
+            className="fixed inset-0 z-[101] bg-gradient-to-br from-[#2A7B9B] to-[#1C314F] text-white p-6 overflow-y-auto lg:hidden h-[600px]"
           >
             <div className="flex justify-between items-center mb-10">
               <span className="font-bold text-xl">Menu</span>
