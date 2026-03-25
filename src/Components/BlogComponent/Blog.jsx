@@ -3,7 +3,7 @@ import BlogComn from '../Sherd-compo/BlogComn'
 
 const Blog = () => {
   return (
-    <div className='max-w-5xl mx-auto py-10'>
+    <div className='max-w-5xl mx-auto py-10 px-5'>
         <BlogComn 
         imageSrc="./bp1.webp" 
         title="A Unified Ecosystem of Social Impact Platforms" 

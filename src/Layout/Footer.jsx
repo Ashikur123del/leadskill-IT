@@ -5,7 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className="commonbgcolor text-white pt-10  md:pt-24 pb-12 px-6 relative overflow-hidden">
+    <footer className="comon text-white pt-10  md:pt-24 pb-12 px-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16 mb-24">
           
@@ -48,7 +48,7 @@ const Footer = () => {
 
 const FooterColumn = ({ title, links }) => (
   <div className="space-y-8">
-    <h4 className="font-bold text-sm uppercase tracking-[0.3em] text-white/60">{title}</h4>
+    <h4 className="font-bold text-sm uppercase text-white/60">{title}</h4>
     <ul className="space-y-4">
       {links.map((link) => (
         <li key={link}>
@@ -58,7 +58,7 @@ const FooterColumn = ({ title, links }) => (
               animate={{ x: [0, 10, 0] }}   
               transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
             >
-              <FaArrowRightLong size={16} />
+              {/* <FaArrowRightLong size={16} /> */}
             </motion.span>
 
             <span className="group-hover:translate-x-1 transition-transform duration-300">

@@ -44,7 +44,6 @@ const CustomCursor = () => {
 
   return (
     <>
-      {/* ১. চোখের আইকন (স্মার্ট কালার সহ) */}
       <motion.div
         className="fixed top-0 left-0 pointer-events-none z-[9999] flex items-center justify-center"
         style={{ x: mouseX, y: mouseY, translateX: "-50%", translateY: "-50%" }}
@@ -54,7 +53,6 @@ const CustomCursor = () => {
         </div>
       </motion.div>
 
-      {/* ২. গ্লাস ইফেক্ট রিং */}
       <motion.div
         className="fixed top-0 left-0 pointer-events-none z-[9998] rounded-full border backdrop-blur-[2px]"
         animate={{

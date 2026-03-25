@@ -5,7 +5,7 @@ const GeneralEnquiries = () => {
   return (
     <div className="max-w-5xl mx-auto px-6 pb-16 pt-10 md:pt-40">
       {/* Header */}
-      <div className="text-center mb-12">
+      <div className="text-center mb-12 pt-16 md:pt-0">
         <h1 className="text-4xl font-bold text-green-800 mb-4">General Enquiries</h1>
         <p className="text-gray-600">Reach out to us from our contact form and we will get back to you shortly.</p>
       </div>
