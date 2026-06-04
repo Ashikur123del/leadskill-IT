@@ -23,7 +23,7 @@ const Navbar = () => {
     { name: "Solutions",  hasDropdown: true, dropdown: [{ name: "MentorERP Solutions", path: "/erp" }, { name: "DailyLedger", path: "/daily" }] },
     { name: "Investors",  hasDropdown: true, dropdown: [{ name: "Code of Conduct", path: "/code-of-conduct" }, { name: "Corporate Partners", path: "/partners" }, { name: "Our Clients", path: "/clients" }, { name: "Investors Query", path: "/investors-query" }] },
     { name: "Media", hasDropdown: true, dropdown: [{ name: "Blog", path: "/blogs" }] },
-    { name: "Career", hasDropdown: true, dropdown: [{ name: "Career", path: "/career" }] },
+    { name: "Career", hasDropdown: true, dropdown: [{ name: "Career", path: "/career" }, { name: "Careers & Jobs", path: "/careers-jobs" }] },
     { name: "Contact",hasDropdown: true, dropdown: [{ name: "General Enquiries", path: "/general-enquiries" }, { name: "Job List", path: "/job-list" }] },
   ];
 
