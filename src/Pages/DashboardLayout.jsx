@@ -23,10 +23,10 @@ const DashboardLayout = () => {
         toggleSidebar={toggleSidebar} 
         handleLogout={handleLogout} 
       />
-      <div className="flex-1 flex flex-col overflow-y-auto">
+      <div className="flex-1 flex flex-col overflow-y-auto ">
         
-        <header className="bg-white border-b border-gray-200 py-4 px-4 md:px-8 flex justify-between items-center shadow-sm">
-          <div className="flex items-center gap-4">
+        <header className="bg-black border-b border-gray-200 py-4 px-4 md:px-8 flex justify-between items-center shadow-sm ">
+          <div className="flex items-center gap-4 ">
             <button 
               onClick={toggleSidebar} 
               className="text-slate-600 hover:text-slate-900 focus:outline-none md:hidden p-1 rounded-lg hover:bg-gray-100"
@@ -35,7 +35,7 @@ const DashboardLayout = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
-            <h2 className="text-lg md:text-xl font-bold text-slate-800">স্বাগতম, ইউজার!</h2>
+            <h2 className="text-lg md:text-xl font-bold text-white">স্বাগতম, ইউজার!</h2>
           </div>
 
           <div className="flex items-center gap-3">
@@ -44,7 +44,7 @@ const DashboardLayout = () => {
             </div>
           </div>
         </header>
-        <main className="container mx-auto px-4 md:px-8 py-6">
+        <main className="">
           <Outlet />
         </main>
       </div>
