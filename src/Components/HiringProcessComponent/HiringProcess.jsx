@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const steps = [
-  { number: "1", title: "Apply", desc: "Take the first step toward your career with Leadswin. Submit your application and let us know why you’re ready to grow with us." },
+  { number: "1", title: "Apply", desc: "Take the first step toward your career with Lead-Skill-IT. Submit your application and let us know why you’re ready to grow with us." },
   { number: "2", title: "Initial Screening", desc: "We review your skills, experiences, and aspirations to understand how you can contribute to our vision." },
   { number: "3", title: "Assessment", desc: "Showcase your strengths through a structured assessment tailored to highlight your abilities and potential." },
-  { number: "4", title: "Final Interview", desc: "Meet our team, share your ideas, and explore how you can make an impact at Leadswin." },
+  { number: "4", title: "Final Interview", desc: "Meet our team, share your ideas, and explore how you can make an impact at Lead-Skill-IT." },
   { number: "5", title: "Onboarding", desc: "Welcome aboard! We’ll provide the tools, guidance, and support you need to start strong and succeed with us." }
 ];
 

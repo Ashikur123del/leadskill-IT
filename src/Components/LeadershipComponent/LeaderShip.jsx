@@ -5,19 +5,19 @@ const teamMembers = [
   {
     name: "Shohal",
     role: "Founder & Managing Director",
-    bio: '<span class="font-bold text-emerald-700 dark:text-emerald-400">Shohal</span> is the founder and Managing Director of Leadswin Limited, a technology-driven company focused on improving education. He believes that as the world changes, education must grow with it. This belief inspired him to build Leadswin — a place where practical, system-based innovations help schools, teachers, and students thrive in the future.',
+    bio: '<span class="font-bold text-emerald-700 dark:text-emerald-400">Shohal</span> is the founder and Managing Director of Lead-Skill-IT Limited, a technology-driven company focused on improving education. He believes that as the world changes, education must grow with it. This belief inspired him to build Lead-Skill-IT — a place where practical, system-based innovations help schools, teachers, and students thrive in the future.',
     img: "CEO.webp",
   },
   {
     name: "Zihad Hasan",
     role: "Director, Finance",
-    bio: "Zihad Hasan leads financial strategy and core operations at Leadswin Limited. He drives financial planning, budgeting, performance management, and long-term sustainability — ensuring every decision supports the mission of transforming education through thoughtful technology.",
+    bio: "Zihad Hasan leads financial strategy and core operations at Lead-Skill-IT Limited. He drives financial planning, budgeting, performance management, and long-term sustainability — ensuring every decision supports the mission of transforming education through thoughtful technology.",
     img: "video-editor-team-photo.webp",
   },
   {
     name: "Md. Sahid Hossain",
     role: "Director, Compliance",
-    bio: "With over 20 years in finance and 12 years focused on business excellence, Md. Sahid Hossain brings deep expertise in financial analysis, auditing, and governance. Known for discipline, punctuality, and uncompromising ethics, he strengthens Leadswin’s compliance framework and financial transparency.",
+    bio: "With over 20 years in finance and 12 years focused on business excellence, Md. Sahid Hossain brings deep expertise in financial analysis, auditing, and governance. Known for discipline, punctuality, and uncompromising ethics, he strengthens Lead-Skill-IT’s compliance framework and financial transparency.",
     img: "Video-Editing-600x472.jpg",
   },
 ];

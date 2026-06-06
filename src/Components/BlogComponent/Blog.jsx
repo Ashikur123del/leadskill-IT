@@ -12,14 +12,14 @@ const Blog = () => {
         />
         <BlogComn 
         imageSrc="./bp2.webp" 
-        title="“Making Less to Achieve More”, How Eduman Is Redefining Schools" 
-        description="In 2015, long before digital education became a national discussion, Mr. Raihan Nobel, Founder and Managing Director of Leadswin Limited (then Netizen), envisioned a future where schools could run smarter- not"
+        title="“Making Less to Achieve More”, How MentorERP Is Redefining Schools" 
+        description="In 2015, long before digital education became a national discussion, Mr. Raihan Nobel, Founder and Managing Director of Lead-Skill-IT Limited (then Netizen), envisioned a future where schools could run smarter- not"
         linkUrl="/your-link"
         />
         <BlogComn 
         imageSrc="./bp3.webp" 
         title="Guiding Families, Empowering Futures, Protecting Dreams" 
-        description="In a nation where education often ends at academics, EduCare, an initiative by Leadswin Limited, redefines what true learning means. Founded under the vision of Mr. Raihan Nobel"
+        description="In a nation where education often ends at academics, EduCare, an initiative by Lead-Skill-IT Limited, redefines what true learning means. Founded under the vision of Mr. Raihan Nobel"
         linkUrl="/your-link"
         />
         <BlogComn 
@@ -30,8 +30,8 @@ const Blog = () => {
         />
         <BlogComn 
         imageSrc="./bp-5.webp" 
-        title="Leadswin & Guardian Life Partner to Protect Families Through" 
-        description="Dhaka, Bangladesh — In a landmark step toward building a secure and sustainable education–health ecosystem in Bangladesh, Leadswin Limited has entered into a strategic partnership with Guardian Life"
+        title="Lead-Skill-IT & Guardian Life Partner to Protect Families Through" 
+        description="Dhaka, Bangladesh — In a landmark step toward building a secure and sustainable education–health ecosystem in Bangladesh, Lead-Skill-IT Limited has entered into a strategic partnership with Guardian Life"
         linkUrl="/your-link"
         />
     </div>

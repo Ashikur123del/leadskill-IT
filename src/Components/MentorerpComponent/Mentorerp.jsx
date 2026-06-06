@@ -59,7 +59,7 @@ const Mentorerp = () => {
       {/* Achievements Section with Left-Right Animation */}
       <div className="max-w-6xl mx-auto text-center mb-20">
         <h2 className="text-[#2b3d7a] text-3xl font-bold mb-10">
-          Eduman Achievements
+        MentorERP Achievements
           <div className="h-[5px] w-20 commonbgcolor mx-auto rounded-xl mt-2"></div>
         </h2>
 

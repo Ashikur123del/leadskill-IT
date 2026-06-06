@@ -20,7 +20,7 @@ const BusinessModel = () => {
           <div className="bg-white rounded-3xl shadow-xl border border-gray-100/80 overflow-hidden">
             <div className="p-8 md:p-12 lg:p-16">
               <p className="text-lg md:text-xl text-gray-700 leading-relaxed prose prose-yellow max-w-none">
-                <strong className="text-gray-900 text-2xl block mb-4">Lead-skill-it</strong> follows a multi-revenue, low-friction model built for longevity.
+                <strong className="text-gray-900 text-2xl block mb-4">Lead-Skill-IT</strong> follows a multi-revenue, low-friction model built for longevity.
               </p>
               <p className="mt-6 text-lg md:text-xl text-gray-700 leading-relaxed">
                 We earn through:
@@ -28,11 +28,11 @@ const BusinessModel = () => {
               <ul className="mt-4 space-y-3 text-lg text-gray-700 list-none">
                 <li className="flex items-start">
                   <span className="text-yellow-600 font-bold text-xl mr-4 mt-1">→</span>
-                  <span><strong>SaaS subscriptions</strong> for schools & institutions (Eduman, EduCare, DailyLedger)</span>
+                  <span><strong>SaaS subscriptions</strong> for schools & institutions (MentorERP, Lead-Skill-IT, DailyLedger)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-yellow-600 font-bold text-xl mr-4 mt-1">→</span>
-                  <span><strong>B2C family plans</strong> (EduCare + ValuePlus)</span>
+                  <span><strong>B2C family plans</strong> (Lead-Skill-IT + ValuePlus)</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-yellow-600 font-bold text-xl mr-4 mt-1">→</span>

@@ -31,12 +31,12 @@ const SkillsSection = () => {
   {[
     {
       title: "5,000+ Educational Institute",
-      text: "Lead Skil IT implemented Eduman, a nationwide Education Management System, streamlining academic and administrative operations across schools, colleges, and madrasahs in Bangladesh.",
+      text: "Lead Skil IT implemented MentorERP, a nationwide Education Management System, streamlining academic and administrative operations across schools, colleges, and madrasahs in Bangladesh.",
       icon: "🎓"
     },
     {
       title: "10+ Years of Experience",
-      text: "With over 10 years of proven experience, backed by a decade of expertise, and leveraging extensive industry knowledge, Leadswin delivers innovative and reliable education management solutions.",
+      text: "With over 10 years of proven experience, backed by a decade of expertise, and leveraging extensive industry knowledge, Lead Skill IT delivers innovative and reliable education management solutions.",
       icon: "⏳"
     },
     {

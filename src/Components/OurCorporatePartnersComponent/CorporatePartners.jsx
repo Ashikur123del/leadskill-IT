@@ -1,9 +1,9 @@
 import React from 'react';
 
 const partners = [
-  { name: "DIVINE IT", img: "/P-1.webp", desc: "Divine IT Limited is a Bangladeshi information technology company specializing in software development, system integration, and consultancy services. As our corporate partner, they collaborate with Leadswin Limited to provide comprehensive technical support for the Eduman software, including system updates, maintenance, and bug fixes." },
-  { name: "SSLCOMMERZ", img: "/P-2.webp", desc: "SSLCOMMERZ is a leading fintech and payment automation company in Bangladesh that provides secure payment gateway services to businesses. As our corporate partner, they collaborate with Leadswin Limited to facilitate digital fee collection and support all types of online transactions with reliability and efficiency." },
-  { name: "GUARDIAN LIFE", img: "/P-3.webp", desc: "Guardian Life is one of the leading life insurance companies in Bangladesh, dedicated to ensuring financial protection and well-being for families. As our corporate partner, they collaborate with Leadswin Limited under the EduCare initiative to provide health and educational insurance benefits for students." },
+  { name: "DIVINE IT", img: "/P-1.webp", desc: "Divine IT Limited is a Bangladeshi information technology company specializing in software development, system integration, and consultancy services. As our corporate partner, they collaborate with Lead-Skill-IT Limited to provide comprehensive technical support for the Eduman software, including system updates, maintenance, and bug fixes." },
+  { name: "SSLCOMMERZ", img: "/P-2.webp", desc: "SSLCOMMERZ is a leading fintech and payment automation company in Bangladesh that provides secure payment gateway services to businesses. As our corporate partner, they collaborate with Lead-Skill-IT Limited to facilitate digital fee collection and support all types of online transactions with reliability and efficiency." },
+  { name: "GUARDIAN LIFE", img: "/P-3.webp", desc: "Guardian Life is one of the leading life insurance companies in Bangladesh, dedicated to ensuring financial protection and well-being for families. As our corporate partner, they collaborate with Lead-Skill-IT Limited under the EduCare initiative to provide health and educational insurance benefits for students." },
 ];
 
 const CorporatePartners = () => {

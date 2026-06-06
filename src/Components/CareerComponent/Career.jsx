@@ -22,7 +22,7 @@ const Career = () => {
         <FeatureCard 
           icon={FaUsers}
           title="Team Work Culture"
-          description="At Leadswin, we value collaboration and mutual respect. Our team works as one- sharing ideas, supporting each other, and combining strengths to achieve common goals. Together, we work not just as colleagues, but as one unified team committed to achieving common goals and delivering lasting impact."
+          description="At Lead-Skill-IT, we value collaboration and mutual respect. Our team works as one- sharing ideas, supporting each other, and combining strengths to achieve common goals. Together, we work not just as colleagues, but as one unified team committed to achieving common goals and delivering lasting impact."
         />
 
         <FeatureCard 

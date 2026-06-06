@@ -4,7 +4,7 @@ const VisionMission = () => {
   const sections = [
     {
       title: "Vision",
-      content: "To build a sustainable ecosystem where innovation, technology, and human potential come together to create opportunities and drive national progress. Leadswin envisions a future where every initiative contributes to employment, empowerment, and a smarter, more sustainable Bangladesh.",
+      content: "To build a sustainable ecosystem where innovation, technology, and human potential come together to create opportunities and drive national progress. Lead-Skill-IT envisions a future where every initiative contributes to employment, empowerment, and a smarter, more sustainable Bangladesh.",
       image: "/Group-1.webp",
       // Modern Indigo Gradient
       gradient: "from-slate-900 via-slate-800 to-indigo-950",
@@ -20,7 +20,7 @@ const VisionMission = () => {
     },
     {
       title: "Value",
-      content: "Leadswin values business focus, integrity, and ethics while nurturing an open, growth-oriented mindset. We inspire creativity, foster innovation, build mutually beneficial relationships, and act with care and responsibility toward people and the progress we make.",
+      content: "Lead-Skill-IT values business focus, integrity, and ethics while nurturing an open, growth-oriented mindset. We inspire creativity, foster innovation, build mutually beneficial relationships, and act with care and responsibility toward people and the progress we make.",
       image: "/Group-3.webp",
       gradient: "from-slate-900 via-indigo-950 to-slate-900",
       reverse: false
@@ -41,7 +41,7 @@ const VisionMission = () => {
             >
               <div className="space-y-6">
                 <div className="inline-block px-4 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-bold tracking-widest uppercase">
-                  Leadswin Strategy
+                  Lead-Skill-IT Strategy
                 </div>
                 <h2 className="text-5xl font-black tracking-tighter italic">
                   {item.title}
