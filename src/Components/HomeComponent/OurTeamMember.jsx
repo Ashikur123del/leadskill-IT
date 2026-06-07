@@ -11,11 +11,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 const teamMembers = [
-  { id: 1, name: "Mohammad Ali", role: "Founder CEO", image: "/CEO.webp" },
-  { id: 2, name: "Mohammad Ali", role: "Web Designer", image: "/Video-Editing-600x472.jpg" },
-  { id: 3, name: "Jihad Ferdaus Khan", role: "Video Editor", image: "/video-editor-team-photo.webp" },
-  { id: 4, name: "Shyamoli Jahan Shimu", role: "Digital Marketing", image: "/Shyamoli-Jahan-Shimu.webp" },
-  { id: 5, name: "Next Member", role: "App Developer", image: "/CEO.webp" },
+  { id: 1, name: "Mohammad Ali", role: "Founder CEO", image: "https://placehold.co/600x400", alt: "Placeholder Image" },
+  { id: 2, name: "Mohammad Ali", role: "Web Designer", image: "https://placehold.co/600x400", alt: "Placeholder Image" },
+  { id: 3, name: "Jihad Ferdaus Khan", role: "Video Editor", image: "https://placehold.co/600x400", alt: "Placeholder Image" },
+  { id: 4, name: "Shyamoli Jahan Shimu", role: "Digital Marketing", image: "https://placehold.co/600x400", alt: "Placeholder Image" },
+  { id: 5, name: "Next Member", role: "App Developer", image: "https://placehold.co/600x400", alt: "Placeholder Image" },
 ];
 
 const OurTeamMember = () => {

@@ -5,7 +5,8 @@ import HeroComn from '../Components/Sherd-compo/HeroComn'
 const InvestorsQuerys = () => {
   return (
     <div>
-        <HeroComn imageSrc='./eduman-6.webp'/>
+        <HeroComn />  
+        {/* imageSrc='./eduman-6.webp' */}
         <InvestorsQuery />
     </div>
   )

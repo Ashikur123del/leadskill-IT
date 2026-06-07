@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const JobList = () => {
   return (
@@ -45,10 +46,10 @@ const JobList = () => {
             </div>
 
             <div className="pt-6">
-              <button className="btn commonbgcolor py-4 px-6">
+              <Link to="/careers-jobs" className="btn commonbgcolor py-4 px-6">
                 Details
                 <span className="ml-2 inline-block transition-transform group-hover:translate-x-1"><FaArrowRightLong /></span>
-              </button>
+              </Link>
             </div>
 
           </div>

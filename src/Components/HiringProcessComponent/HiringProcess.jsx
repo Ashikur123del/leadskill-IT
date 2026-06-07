@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const steps = [
   { number: "1", title: "Apply", desc: "Take the first step toward your career with Lead-Skill-IT. Submit your application and let us know why you’re ready to grow with us." },
@@ -42,7 +43,7 @@ const HiringProcess = () => {
         <div className="">
             <h2 className='text-4xl md:text-6xl text-green-800'>Join Our Team</h2>
             <p className='text-xl py-4'>Let's Grow Together!</p>
-            <button className='commonbgcolor btn px-6 py-3'>See All Jobs</button>
+            <Link to="/careers-jobs" className='commonbgcolor btn px-6 py-3'>See All Jobs</Link>
         </div>
       </div>
     </section>

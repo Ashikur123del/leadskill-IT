@@ -25,7 +25,7 @@ const Footer = () => {
         {/* Footer Bottom Section */}
         <div className="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8">
           <p className="text-sm font-medium opacity-80 tracking-wide">
-            ©2026 Leadswin Limited. All rights reserved.
+            ©2026 Lead-Skill-IT Limited. All rights reserved.
           </p>
           
           <div className="flex items-center gap-10">
