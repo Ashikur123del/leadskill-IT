@@ -1,5 +1,7 @@
-import React from 'react';
-import { HashRouter, Routes, Route } from "react-router-dom"; // পরিবর্তন: BrowserRouter বা Routes এর বদলে HashRouter ব্যবহার
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; // BrowserRouter ইম্পোর্ট করা হলো
+
+// আপনার সমস্ত পেজ ও কম্পোনেন্ট ইম্পোর্ট
 import Root from "./Layout/Root";
 import Home from "./Pages/Home";
 import OurHistory from "./Pages/OurHistory";
@@ -26,10 +28,11 @@ import ProtectedRoute from "./Components/ProtectedRoute";
 
 export default function App() {
   return (
-    // আমরা পুরো রুটসকে HashRouter দিয়ে মুড়িয়ে দিলাম যাতে ফ্রন্ট-এন্ডেই ১০০% রাউটিং লক থাকে
-    <HashRouter>
+    // আমরা পুরো অ্যাপটিকে BrowserRouter দিয়ে মুড়িয়ে দিলাম যাতে public/404.html এর সাথে এটি ক্লিন ইউআরএল বজায় রাখতে পারে
+    <BrowserRouter>
       <CustomCursor />
       <Routes>
+        {/* পাবলিক রুটস */}
         <Route path="/" element={<Root />}>
           <Route index element={<Home />} />
           <Route path="history" element={<OurHistory />} />
@@ -49,8 +52,11 @@ export default function App() {
           <Route path="job-list" element={<JobLists />} />
           <Route path="careers-jobs" element={<CareersJobs />} />
         </Route>
+        
+        {/* লগইন রাউট */}
         <Route path="/login" element={<Login />} />
 
+        {/* প্রোটেক্টেড ড্যাশবোর্ড রাউট */}
         <Route 
           path="/dashboard" 
           element={
@@ -62,6 +68,6 @@ export default function App() {
           <Route index element={<DashboardHome />} /> 
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
