@@ -37,7 +37,10 @@ const Mentorerp = () => {
     { title: "Digital Fees Collection", icon: <MdOutlinePayments /> },
     { title: "Automated Accounting", icon: <FaFileInvoiceDollar /> },
     { title: "Layout & Certificate", icon: <MdOutlineWorkspacePremium /> },
-    { title: "Result Process & Publishing", icon: <MdOutlineAssignmentTurnedIn /> },
+    {
+      title: "Result Process & Publishing",
+      icon: <MdOutlineAssignmentTurnedIn />,
+    },
     { title: "Bulk SMS & Notification", icon: <MdSms /> },
   ];
 
@@ -45,21 +48,26 @@ const Mentorerp = () => {
     <section className=" py-10 md:py-16 px-5 overflow-hidden">
       {/* Top Content */}
       <div className="text-center max-w-5xl mx-auto mb-16">
-        <img src="./logo.png" alt="Eduman Logo" className=" h-16 md:h-24 mx-auto mb-6" />
+        <img
+          src="./logo.png"
+          alt="Eduman Logo"
+          className=" h-16 md:h-24 mx-auto mb-6"
+        />
         <h3 className="text-[#2b3d7a] text-3xl font-bold mb-6">
           A Comprehensive Education Management System
         </h3>
         <p className="text-gray-700 text-lg text-center md:text-justify leading-relaxed">
-          MentorERP is a cloud-based school management system for small to mid-sized educational institutions. 
-          It centralizes academic and administrative tasks like attendance tracking, exam scheduling, 
-          grade publication, fee collection, and staff management.
+          MentorERP is a cloud-based school management system for small to
+          mid-sized educational institutions. It centralizes academic and
+          administrative tasks like attendance tracking, exam scheduling, grade
+          publication, fee collection, and staff management.
         </p>
       </div>
 
       {/* Achievements Section with Left-Right Animation */}
       <div className="max-w-6xl mx-auto text-center mb-20">
         <h2 className="text-[#2b3d7a] text-3xl font-bold mb-10">
-        MentorERP Achievements
+          MentorERP Achievements
           <div className="h-[5px] w-20 commonbgcolor mx-auto rounded-xl mt-2"></div>
         </h2>
 
@@ -77,7 +85,9 @@ const Mentorerp = () => {
                 {item.icon}
               </div>
               <h4 className="text-[#2b3d7a] text-xl font-bold">{item.title}</h4>
-              <p className="text-gray-600 text-sm mt-1 uppercase">{item.desc}</p>
+              <p className="text-gray-600 text-sm mt-1 uppercase">
+                {item.desc}
+              </p>
             </motion.div>
           ))}
         </div>
@@ -85,7 +95,11 @@ const Mentorerp = () => {
 
       {/* Features Section */}
       <div className="max-w-6xl mx-auto text-center">
-        <img src="./eduman-2.webp" alt="" className="mx-auto" />
+        <img
+          src="./00111 .png"
+          alt="Placeholder"
+          className="mx-auto object-cover"
+        />
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 p-10">
           {features.map((item, index) => (
             <motion.div
