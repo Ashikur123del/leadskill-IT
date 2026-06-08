@@ -16,7 +16,7 @@ import CustomCursor from "./Components/MouseCursorComponent/CustomCursor";
 import Blogs from "./Pages/Blogs";
 import Careers from "./Pages/Careers";
 import GeneralEnquiriess from "./Pages/GeneralEnquiriess";
-import JobLists from "./Pages/JobLists";
+// import JobLists from "./Pages/JobLists";
 import CareersJobs from "./Pages/CareersJobs";
 import DashboardLayout from "./Pages/DashboardLayout";
 import DashboardHome from "./Pages/DashboardHome";
@@ -43,8 +43,8 @@ export default function App() {
           <Route path="investors-query" element={<InvestorsQuerys />} />
           <Route path="blogs" element={<Blogs />} />
           <Route path="career" element={<Careers />} />
-          <Route path="general-enquiries" element={<GeneralEnquiriess />} />
-          <Route path="job-list" element={<JobLists />} />
+          <Route path="contact-us" element={<GeneralEnquiriess />} />
+          {/* <Route path="job-list" element={<JobLists />} /> */}
           <Route path="careers-jobs" element={<CareersJobs />} />
         </Route>
         <Route path="/login" element={<Login />} />

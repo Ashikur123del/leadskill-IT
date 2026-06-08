@@ -23,8 +23,8 @@ const GeneralEnquiries = () => {
           {[
             { icon: FaMapMarkerAlt, title: "Address", text: "চৌরঙ্গী সুপার মার্কেট, ৫ম তলা (লিফট - ৪), সাভার বাস স্ট্যান্ড, সাভার, ঢাকা - ১৩৪০" },
             { icon: FaEnvelope, title: "Email", text: "info@leadswin.biz" },
-            { icon: FaPhoneAlt, title: "Phone", text: "09678221191" },
-            { icon: FaHeadset, title: "Phone Alt", text: "09678221191" }
+            { icon: FaPhoneAlt, title: "Phone", text: "+880 1327-019017" },
+            { icon: FaHeadset, title: "Phone Alt", text: "+880 1688-667870" }
           ].map((item, idx) => (
             <div key={idx} className="flex items-start gap-4 p-3 bg-white rounded-lg border border-gray-100 shadow-sm">
               <div className="text-green-600 mt-1"><item.icon size={20} /></div>

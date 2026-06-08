@@ -20,11 +20,11 @@ const Navbar = () => {
   const menuItems = [
     { name: "Home", path: "/", hasDropdown: false },
     { name: "About", hasDropdown: true, dropdown: [{ name: "Our History", path: "/history" }, { name: "Vision & Mission", path: "/vision-mission" }, { name: "Leadership", path: "/leadership" }, { name: "Business Model", path: "/business-model" }, { name: "Our Innovation", path: "/innovation" }] },
-    { name: "Solutions",  hasDropdown: true, dropdown: [{ name: "MentorERP Solutions", path: "/erp" }, { name: "DailyLedger", path: "/daily" }] },
+    { name: "Solutions",  hasDropdown: true, dropdown: [{ name: "MentorERP Solutions", path: "/erp" }, { name: "DailyLedger", path: "/daily" }, { name: "Mentorerp Visit", path: "https://mentorerp.com" }] },
     { name: "Investors",  hasDropdown: true, dropdown: [{ name: "Code of Conduct", path: "/code-of-conduct" }, { name: "Corporate Partners", path: "/partners" }, { name: "Our Clients", path: "/clients" }, { name: "Investors Query", path: "/investors-query" }] },
     { name: "Media", hasDropdown: true, dropdown: [{ name: "Blog", path: "/blogs" }] },
     { name: "Career", hasDropdown: true, dropdown: [{ name: "Career", path: "/career" }, { name: "Careers & Jobs", path: "/careers-jobs" }] },
-    { name: "Contact",hasDropdown: true, dropdown: [{ name: "General Enquiries", path: "/general-enquiries" }, { name: "Job List", path: "/job-list" }] },
+    { name: "Contact",hasDropdown: true, dropdown: [{ name:"Contact Us", path: "/contact-us" }, ] },
   ];
 
   return (
