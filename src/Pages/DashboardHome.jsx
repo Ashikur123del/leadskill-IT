@@ -47,27 +47,29 @@ const DashboardHome = () => {
   };
 
   const handleUpdateStatus = async (userId, nextStatus, successMessage) => {
-    try {
-      const response = await fetch(`https://lead-skill-server.vercel.app/${userId}`, {
-        method: 'PATCH',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ status: nextStatus }),
-      });
-      const data = await response.json();
+  try {
+    const response = await fetch(`https://lead-skill-server.vercel.app/api/users/${userId}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ status: nextStatus }),
+    });
 
-      if (data.success || response.ok) {
-        toast.success(successMessage || `স্ট্যাটাস সফলভাবে ${nextStatus} করা হয়েছে!`);
-        setUsers(prevUsers => 
-          prevUsers.map(u => (u._id === userId || u.id === userId) ? { ...u, status: nextStatus } : u)
-        );
-      } else {
-        toast.error(data.message || 'স্ট্যাটাস আপডেট করা সম্ভব হয়নি!');
-      }
-    } catch (error) {
-      console.error('Error updating status:', error);
-      toast.error('সার্ভারে সমস্যা হয়েছে!');
+    const data = await response.json();
+
+    if (response.ok) {
+      toast.success(successMessage || `স্ট্যাটাস সফলভাবে ${nextStatus} করা হয়েছে!`);
+      // UI আপডেট
+      setUsers(prevUsers => 
+        prevUsers.map(u => (u._id === userId || u.id === userId) ? { ...u, status: nextStatus } : u)
+      );
+    } else {
+      toast.error(data.message || 'স্ট্যাটাস আপডেট করা সম্ভব হয়নি!');
     }
-  };
+  } catch (error) {
+    console.error('Error updating status:', error);
+    toast.error('সার্ভারে কানেক্ট করা যাচ্ছে না!');
+  }
+};
 
   useEffect(() => {
     let result = [...users];

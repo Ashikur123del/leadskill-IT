@@ -1,5 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Unus from "../../assets/Unus.jpeg";
+import Sohel from "../../assets/Sohel.jpeg";
+import Alom from "../../assets/alom.png";
+import Zehad from "../../assets/zehad.jpeg";
 
 const teamMembers = [
   {
@@ -15,7 +19,7 @@ Since our inception, we have remained committed to delivering quality services a
 
 I would like to thank our clients, partners, and dedicated team members for their trust and support. Together, we will continue to contribute to the digital transformation of education and build a smarter future.
           </p>`,
-    image: "https://placehold.co/600x600",
+    image: Unus,
   },
   {
     name: "Mohammad Sohel Rana",
@@ -25,7 +29,7 @@ I would like to thank our clients, partners, and dedicated team members for thei
 Our mission is to simplify institutional management, improve operational efficiency, and create a seamless experience for administrators, teachers, students, and parents. We strive to ensure that every educational institution can benefit from modern technology regardless of its size or location.
 
 As we move forward, we remain focused on excellence, innovation, and customer satisfaction. We appreciate the trust placed in us by our clients and look forward to achieving greater success together.`,
-    image: "https://placehold.co/600x600",
+    image: Sohel,
   },
   {
     name: "MD. Sha Alam Islam",
@@ -37,7 +41,7 @@ We understand the challenges faced by educational institutions in managing acade
 Our commitment extends beyond software development. We are dedicated to supporting our clients through continuous training, technical assistance, and innovation. We believe that sustainable growth is achieved through trust, partnership, and shared success.
 
 Thank you for being a part of our journey as we continue to shape the future of educational management.`,
-    image: "https://placehold.co/600x600",
+    image: Alom,
   },
   {
     name: "Jihad Ferdaus Khan",
@@ -50,7 +54,7 @@ As we expand our reach and strengthen our partnerships, we remain focused on cre
 
 Together, we can build a future where education management is simple, efficient, and accessible for all.
 `,
-    image: "https://placehold.co/600x600",
+    image: Zehad,
   },
 ];
 
@@ -90,7 +94,7 @@ const LeaderShip = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-20 md:mb-28"
+          className="text-center mb-7 md:mb-28"
         >
           <span className="bg-blue-600/10 text-blue-600 text-[10px] md:text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-widest mb-4 inline-block border border-blue-500/10">
             Leadership
@@ -115,7 +119,7 @@ const LeaderShip = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="space-y-32 md:space-y-40"
+          className="space-y-10 md:space-y-20"
         >
           {teamMembers.map((member, index) => {
             const isEven = index % 2 === 0;
@@ -126,29 +130,28 @@ const LeaderShip = () => {
                 variants={memberVariants}
                 className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
               >
-                {/* Image Container with Dynamic Order */}
+    
                 <div
                   className={`lg:col-span-5 flex justify-center ${isEven ? "lg:order-1" : "lg:order-2"}`}
                 >
                   <motion.div
                     whileHover={{ scale: 1.02, y: -5 }}
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="group relative w-full max-w-[340px] md:max-w-[360px] mb-8 lg:mb-0"
+                    className="group relative w-full max-w-[340px] md:max-w-[360px] mb-8 lg:mb-0 p-4"
                   >
-                    {/* Shadow Layer */}
+              
                     <div className="absolute inset-4 bg-blue-600/10 rounded-[2.5rem] blur-2xl group-hover:bg-blue-600/20 transition-all duration-500"></div>
 
-                    {/* Main Image Frame */}
-                    <div className="relative overflow-hidden rounded-[2.5rem] border-4 border-white bg-white shadow-[0_20px_50px_rgba(15,23,42,0.08)] z-10 aspect-square">
+                    <div className="relative overflow-hidden rounded-[2.5rem] border-4 border-white bg-white shadow-[0_20px_50px_rgba(15,23,42,0.08)] z-10 ">
+                      {" "}
                       <img
                         src={member.image}
                         alt={`${member.name} - ${member.role}`}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                         loading="lazy"
                       />
                     </div>
-
-                    {/* NEW: Floating Text Badge with Blue-Indigo Gradient (Matched with Title) */}
+            
                     <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[90%] z-20 pointer-events-none">
                       <div className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-2xl py-4 px-5 shadow-[0_15px_35px_rgba(59,130,246,0.25)] text-center border border-white/10 transform transition-all duration-300 group-hover:-translate-y-1">
                         <h3 className="font-black text-xl md:text-2xl tracking-tight text-white drop-shadow-sm">
@@ -161,8 +164,6 @@ const LeaderShip = () => {
                     </div>
                   </motion.div>
                 </div>
-
-                {/* Biography Text Container */}
                 <div
                   className={`lg:col-span-7 ${isEven ? "lg:order-2" : "lg:order-1"}`}
                 >
