@@ -1,11 +1,12 @@
 import React from 'react'
 import BlogComn from '../Sherd-compo/BlogComn'
+import Logo from '../../assets/mentor erp photos .png'
 
 const Blog = () => {
   return (
     <div className='max-w-5xl mx-auto py-10 px-5'>
         <BlogComn 
-        imageSrc="./bp1.webp" 
+        imageSrc={Logo} 
         title="A Unified Ecosystem of Social Impact Platforms" 
         description="To build a unified and system-driven ecosystem that transforms how people in Bangladesh learn to earn, stay secure and healthy, and invest safely- ensuring that innovation serves humanity with integrity."
         linkUrl="/your-link"

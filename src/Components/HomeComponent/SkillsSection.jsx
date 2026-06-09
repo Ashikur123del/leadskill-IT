@@ -15,7 +15,7 @@ const SkillsSection = () => {
           className="relative h-[500px] w-full max-w-md mx-auto lg:mx-0 col-span-1"
         >
           <img src="p.jpg" alt="Profile 1" className="absolute top-0 right-0  object-cover rounded-3xl shadow-2xl z-10" />
-          <img src="p2.webp" alt="Profile 2" className="absolute top-10 left-0  object-cover rounded-3xl shadow-2xl border-[8px] border-white z-20" />
+          {/* <img src="p2.webp" alt="Profile 2" className="absolute top-10 left-0  object-cover rounded-3xl shadow-2xl border-[8px] border-white z-20" /> */}
           
           <motion.div 
             animate={{ y: [0, -15, 0] }}

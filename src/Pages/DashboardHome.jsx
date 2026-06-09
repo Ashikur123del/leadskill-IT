@@ -58,7 +58,6 @@ const DashboardHome = () => {
 
     if (response.ok) {
       toast.success(successMessage || `স্ট্যাটাস সফলভাবে ${nextStatus} করা হয়েছে!`);
-      // UI আপডেট
       setUsers(prevUsers => 
         prevUsers.map(u => (u._id === userId || u.id === userId) ? { ...u, status: nextStatus } : u)
       );
@@ -96,7 +95,9 @@ const DashboardHome = () => {
       <div className="min-h-screen bg-black/20 flex items-center justify-center text-neutral-400 font-mono text-xs tracking-widest">
         <div className="flex flex-col items-center gap-3">
           <div className="w-6 h-6 border-2 border-white/15 border-t-white rounded-full animate-spin"></div>
-          <span>LOADING USERS SYSTEM...</span>
+          <span>
+            <span className="loading loading-bars loading-xl"></span>
+          </span>
         </div>
       </div>
     );

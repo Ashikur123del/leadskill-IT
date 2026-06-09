@@ -2,20 +2,23 @@ import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-// Swiper imports
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
+import Unus from "../../assets/Unus.jpeg";
+import Sohel from "../../assets/Sohel.jpeg";
+import Alom from "../../assets/alom.png";
+import Zehad from "../../assets/zehad.jpeg";
 
-// Swiper styles
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 const teamMembers = [
-  { id: 1, name: "Mohammad Ali", role: "Founder CEO", image: "https://placehold.co/600x400", alt: "Placeholder Image" },
-  { id: 2, name: "Mohammad Ali", role: "Web Designer", image: "https://placehold.co/600x400", alt: "Placeholder Image" },
-  { id: 3, name: "Jihad Ferdaus Khan", role: "Video Editor", image: "https://placehold.co/600x400", alt: "Placeholder Image" },
-  { id: 4, name: "Shyamoli Jahan Shimu", role: "Digital Marketing", image: "https://placehold.co/600x400", alt: "Placeholder Image" },
-  { id: 5, name: "Next Member", role: "App Developer", image: "https://placehold.co/600x400", alt: "Placeholder Image" },
+  { id: 1, name: "Mohammad Ali", role: "Founder CEO", image: Unus, alt: "Unus" },
+  { id: 2, name: "Mohammad Ali", role: "Web Designer", image: Sohel, alt: "Sohel" },
+  { id: 3, name: "Jihad Ferdaus Khan", role: "Video Editor", image: Alom, alt: "Alom" },
+  { id: 4, name: "Shyamoli Jahan Shimu", role: "Digital Marketing", image: Zehad, alt: "Zehad" },
+  { id: 5, name: "Next Member", role: "App Developer", image: Unus, alt: "Alt" },
 ];
 
 const OurTeamMember = () => {
@@ -42,7 +45,6 @@ const OurTeamMember = () => {
               Let's talk about your project.
             </p>
             
-            {/* Custom Smart Navigation Buttons */}
             <div className="flex items-center gap-4">
               <button 
                 onClick={() => swiperRef.current?.slidePrev()}
@@ -64,7 +66,6 @@ const OurTeamMember = () => {
           </div>
         </div>
 
-        {/* Swiper Slider */}
         <Swiper
           onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
@@ -98,10 +99,8 @@ const TeamCard = ({ member }) => {
       className="flex flex-col items-center group py-4"
     >
       <div className="relative mb-8">
-        {/* Outer Glow Effect */}
         <div className="absolute -inset-5 rounded-full blur-xl opacity-0 group-hover:opacity-40 transition-opacity duration-500 bg-blue-500"></div>
         
-        {/* Profile Circle */}
         <div className="relative w-64 h-64 rounded-full overflow-hidden border-[8px] border-[#1a1a1a] bg-[#1a1a1a52] z-10 ring-1 ring-gray-800">
           <img 
             src={member.image} 
@@ -109,7 +108,6 @@ const TeamCard = ({ member }) => {
             className="w-full h-full object-cover transition duration-700 group-hover:scale-110"
           />
           
-          {/* Social Icons Overlay */}
           <div className="absolute inset-0 bg-gradient-to-t from-blue-900/60 to-transparent flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
             <SocialIcon Icon={FaFacebookF} />
             <SocialIcon Icon={FaTwitter} />
