@@ -54,25 +54,13 @@ const Sidebar = ({ isOpen, toggleSidebar, handleLogout }) => {
               <MdDashboardCustomize /> ড্যাশবোর্ড হোম
             </Link>
             <Link 
-              to="/dashboard/profile" 
+              to="/dashboard/dashboard-contact" 
               onClick={toggleSidebar} 
               className={`px-4 py-3 rounded-xl transition-all flex items-center gap-2 font-medium ${isActive('/dashboard/profile')}`}
             >
-              <FaUserCircle /> আমার প্রোফাইল
+              <FaUserCircle /> Contact Info
             </Link>
-            <Link 
-              to="/dashboard/settings" 
-              onClick={toggleSidebar} 
-              className={`px-4 py-3 rounded-xl transition-all flex items-center gap-2 font-medium ${isActive('/dashboard/settings')}`}
-            >
-              <CiSettings /> সেটিংস
-            </Link>
-            <Link 
-              to="/" 
-              className="flex items-center gap-2 px-4 py-3 rounded-xl hover:bg-slate-800 transition-all font-medium border-t border-slate-800 mt-4 text-gray-400 hover:text-white"
-            >
-              <IoHomeOutline /> মূল ওয়েবসাইট
-            </Link>
+            
           </nav>
         </div>
 

@@ -24,7 +24,7 @@ const Navbar = () => {
     { name: "Investors",  hasDropdown: true, dropdown: [{ name: "Code of Conduct", path: "/code-of-conduct" }, { name: "Corporate Partners", path: "/partners" }, { name: "Our Clients", path: "/clients" }, { name: "Investors Query", path: "/investors-query" }] },
     { name: "Media", hasDropdown: true, dropdown: [{ name: "Blog", path: "/blogs" }] },
     { name: "Career", hasDropdown: true, dropdown: [{ name: "Career", path: "/career" }, { name: "Careers & Jobs", path: "/careers-jobs" }] },
-    { name: "Contact",hasDropdown: true, dropdown: [{ name:"Contact Us", path: "/contact-us" }, ] },
+    // { name: "Contact",hasDropdown: true, dropdown: [{ name:"Contact Us", path: "/contact-us" }, ] },
   ];
 
   return (
@@ -66,7 +66,7 @@ const Navbar = () => {
             )}   
           </div>
         ))}
-        <Link to="/contact" className="flex items-center gap-2 border border-white px-5 py-2 rounded-full font-bold text-[14px] hover:bg-white hover:text-[#2A7B9B] transition-all whitespace-nowrap">
+        <Link to="/contact-us" className="flex items-center gap-2 border border-white px-5 py-2 rounded-full font-bold text-[14px] hover:bg-white hover:text-[#2A7B9B] transition-all whitespace-nowrap">
           Contact us <FaArrowRight size={12} />
         </Link>
       </div>

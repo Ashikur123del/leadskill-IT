@@ -22,6 +22,7 @@ import DashboardLayout from "./Pages/DashboardLayout";
 import DashboardHome from "./Pages/DashboardHome";
 import Login from "./Pages/Login";
 import ProtectedRoute from "./Components/ProtectedRoute";
+import DashboardContact from "./Pages/DashboardContact";
 
 export default function App() {
   return (
@@ -58,6 +59,7 @@ export default function App() {
         }
       >
         <Route index element={<DashboardHome />} /> 
+        <Route path="dashboard-contact"  element={<DashboardContact />} /> 
         
       </Route>
       </Routes>

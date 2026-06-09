@@ -1,16 +1,54 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaHeadset } from 'react-icons/fa';
+import { toast } from 'react-toastify';
+
+const contactSchema = z.object({
+  fullName: z.string().min(2, "Name is required"),
+  phone: z.string().min(11, "Valid phone number is required"),
+  email: z.string().email("Invalid email address"),
+  message: z.string().min(10, "Message must be at least 10 characters"),
+});
 
 const GeneralEnquiries = () => {
+  const { register, handleSubmit, formState: { errors, isSubmitting }, reset } = useForm({
+    resolver: zodResolver(contactSchema)
+  });
+
+const onSubmit = async (data) => {
+    try {
+  
+      const response = await fetch('https://lead-skill-server.vercel.app/api/enquiries', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data), 
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        toast.success(result.message || "আপনার মেসেজটি সফলভাবে পাঠানো হয়েছে!");
+        reset(); 
+      } else {
+        toast.error(result.message || "কিছু সমস্যা হয়েছে, আবার চেষ্টা করুন।");
+      }
+    } catch (error) {
+      console.error("Submission Error:", error);
+      toast.error("সার্ভারের সাথে সংযোগ করা সম্ভব হচ্ছে না!");
+    }
+  };
+
   return (
     <div className="max-w-5xl mx-auto px-6 pb-16 pt-10 md:pt-40">
-      {/* Header */}
       <div className="text-center mb-12 pt-16 md:pt-0">
         <h1 className="text-4xl font-bold text-green-800 mb-4">General Enquiries</h1>
         <p className="text-gray-600">Reach out to us from our contact form and we will get back to you shortly.</p>
       </div>
 
-      {/* Top Section: Map and Contact Info */}
       <div className="grid md:grid-cols-2 gap-8 mb-16">
         <div className="h-80 rounded-2xl overflow-hidden shadow-md">
           <iframe
@@ -37,30 +75,40 @@ const GeneralEnquiries = () => {
         </div>
       </div>
 
-      {/* Bottom Section: Contact Form */}
       <div className="bg-white p-8 md:p-10 rounded-2xl shadow-sm border border-gray-200 max-w-3xl mx-auto">
         <h2 className="text-3xl font-bold text-green-800 text-center mb-2">Drop Us A Line</h2>
-        <p className="text-center text-gray-500 mb-8 text-sm">Reach out to us from our contact form and we will get back to you shortly.</p>
         
-        <form className="space-y-5">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+          {/* Inputs with Error Handling */}
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-1">Full Name *</label>
-            <input type="text" className="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-green-600" />
+            <input {...register("fullName")} className="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-green-600" />
+            {errors.fullName && <p className="text-red-500 text-xs">{errors.fullName.message}</p>}
           </div>
+
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-1">Phone Number *</label>
-            <input type="tel" className="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-green-600" />
+            <input {...register("phone")} className="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-green-600" />
+            {errors.phone && <p className="text-red-500 text-xs">{errors.phone.message}</p>}
           </div>
+
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-1">Email Address *</label>
-            <input type="email" className="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-green-600" />
+            <input {...register("email")} className="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-green-600" />
+            {errors.email && <p className="text-red-500 text-xs">{errors.email.message}</p>}
           </div>
+
           <div>
             <label className="block text-sm font-semibold text-gray-700 mb-1">Message *</label>
-            <textarea rows="4" className="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-green-600"></textarea>
+            <textarea {...register("message")} rows="4" className="w-full p-3 bg-gray-100 border border-gray-200 rounded outline-none focus:border-green-600"></textarea>
+            {errors.message && <p className="text-red-500 text-xs">{errors.message.message}</p>}
           </div>
-          <button className="bg-green-800 text-white font-bold py-3 px-8 rounded hover:bg-green-900 transition-all">
-            Submit
+
+          <button 
+            disabled={isSubmitting}
+            className="w-full bg-green-800 text-white font-bold py-3 px-8 rounded hover:bg-green-900 transition-all disabled:opacity-50"
+          >
+            {isSubmitting ? "Sending..." : "Submit"}
           </button>
         </form>
       </div>
@@ -69,6 +117,3 @@ const GeneralEnquiries = () => {
 };
 
 export default GeneralEnquiries;
-
- 
-   
