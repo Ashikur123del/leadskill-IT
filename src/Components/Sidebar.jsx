@@ -58,7 +58,7 @@ const Sidebar = ({ isOpen, toggleSidebar, handleLogout }) => {
               onClick={toggleSidebar} 
               className={`px-4 py-3 rounded-xl transition-all flex items-center gap-2 font-medium ${isActive('/dashboard/profile')}`}
             >
-              <FaUserCircle /> Contact Info
+              <FaUserCircle /> যোগাযোগের তথ্য   
             </Link>
             
           </nav>

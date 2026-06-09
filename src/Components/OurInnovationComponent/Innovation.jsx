@@ -8,10 +8,11 @@ import {
   Rocket, 
   Handshake, 
   Lightbulb 
-} from 'lucide-react'; // সম্পূর্ণ এরর-ফ্রি এবং মডার্ন আইকন লাইব্রেরি
+} from 'lucide-react'; 
+
+import Image from '/11111.png'
 
 const Innovation = () => {
-  // ৬টি ইনোভেশন পিলারের অ্যারে (Lucide Icons সহ)
   const innovationPillars = [
     {
       title: "Technology-Driven Solutions",
@@ -47,13 +48,11 @@ const Innovation = () => {
 
   return (
     <section className="py-16 md:py-28 bg-gradient-to-b from-slate-50 via-white to-slate-50/50 relative overflow-hidden">
-      {/* Decorative Blur Ambient Backgrounds */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-blue-100/40 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-indigo-100/30 rounded-full blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl relative z-10">
         
-        {/* Title / Main Header Section */}
         <div className="text-center mb-16 md:mb-24">
           <span className="bg-blue-600/10 text-blue-600 text-[10px] md:text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-widest mb-4 inline-block border border-blue-500/10">
             Our Innovation
@@ -73,10 +72,7 @@ const Innovation = () => {
           </div>
         </div>
 
-        {/* 2-Column Main Layout (Left: Cards, Right: Placeholder Image) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          
-          {/* LEFT SIDE: Grid of 6 Pillars */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
             {innovationPillars.map((pillar, index) => (
               <div 
@@ -98,23 +94,19 @@ const Innovation = () => {
             ))}
           </div>
 
-          {/* RIGHT SIDE: Placeholder Image Content Section */}
           <div className="lg:col-span-5 lg:sticky lg:top-12 flex flex-col gap-6">
             <div className="relative w-full max-w-md mx-auto lg:max-w-full group">
-              {/* Soft Ambient Shadow Glow */}
               <div className="absolute inset-4 bg-gradient-to-tr from-blue-600 to-indigo-600 rounded-[2.5rem] blur-2xl opacity-10" />
-              
-              {/* Main Rounded Box Frame Image */}
+          
               <div className="relative overflow-hidden rounded-[2.5rem] border-4 border-white bg-white shadow-[0_20px_50px_rgba(15,23,42,0.06)] z-10 aspect-square">
                 <img
-                  src="https://placehold.co/600x600/e2e8f0/1e293b?text=MentorERP+Innovation"
+                  src={Image}
                   alt="MentorERP System Technology and Smart Corporate Innovation"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-102"
                   loading="lazy"
                 />
               </div>
 
-              {/* Floating Trigger Action Badge */}
               <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-600 text-white rounded-2xl py-4 px-6 shadow-[0_15px_35px_rgba(59,130,246,0.25)] text-center border border-white/10 w-[85%] z-20">
                 <button className="w-full flex items-center justify-center gap-3 font-black text-xs md:text-sm tracking-wider uppercase text-white group/btn">
                   Discover Our Journey
@@ -122,8 +114,6 @@ const Innovation = () => {
                 </button>
               </div>
             </div>
-
-            {/* Premium Bottom Our Commitment Block Box */}
             <div className="mt-6 p-6 bg-gradient-to-r from-blue-500/5 to-indigo-500/5 rounded-2xl border border-blue-500/10 shadow-sm">
               <h4 className="font-black text-slate-900 text-sm md:text-base mb-2 flex items-center gap-2">
                 <Lightbulb className="w-5 h-5 text-blue-600" /> Our Commitment
@@ -136,7 +126,6 @@ const Innovation = () => {
 
         </div>
 
-        {/* Full Width Footer Catchphrase Block Quote */}
         <p className="text-center text-xs md:text-sm font-black text-slate-400 italic tracking-wide uppercase mt-24 border-t border-slate-100 pt-8 w-full">
           "At MentorERP, innovation is the driving force behind our mission to transform education through technology."
         </p>
