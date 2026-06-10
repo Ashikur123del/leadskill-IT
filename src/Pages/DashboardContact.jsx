@@ -6,7 +6,7 @@ const DashboardContact = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/api/enquiries`)
+    fetch(`https://lead-skill-system-i3u1bxgih-ashiks-projects-65b0ba35.vercel.app/api/enquiries`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
