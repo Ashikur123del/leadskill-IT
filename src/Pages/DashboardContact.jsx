@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 
-const DashboardContact = () => {
-     
+const DashboardContact = () => {  
   const [contacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(true);
 
