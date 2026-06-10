@@ -115,7 +115,6 @@ const DashboardHome = () => {
         {statuses.map((tab) => {
           const isActive = activeTab === tab;
           const count = getTabCount(tab);
-
           return (
             <button
               key={tab}

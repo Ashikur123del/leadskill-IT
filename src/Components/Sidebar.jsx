@@ -1,4 +1,4 @@
-// src/components/Dashboard/Sidebar.jsx
+
 import React from 'react';
 import { CiSettings } from 'react-icons/ci';
 import { FaUserCircle } from 'react-icons/fa';
@@ -64,7 +64,6 @@ const Sidebar = ({ isOpen, toggleSidebar, handleLogout }) => {
           </nav>
         </div>
 
-        {/* লগআউট বাটন */}
         <button 
           onClick={handleLogout}
           className="w-full bg-red-600/20 hover:bg-red-600 text-red-400 hover:text-white py-3 rounded-xl font-bold transition-all mt-auto"
