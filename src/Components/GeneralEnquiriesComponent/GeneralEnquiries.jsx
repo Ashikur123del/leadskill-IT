@@ -20,7 +20,7 @@ const GeneralEnquiries = () => {
 const onSubmit = async (data) => {
     try {
   
-      const response = await fetch('https://lead-skill-server.vercel.app/api/enquiries', {
+      const response = await fetch('https://lead-skill-system.vercel.app/api/enquiries', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

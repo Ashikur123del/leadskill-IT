@@ -17,7 +17,7 @@ const DashboardHome = () => {
   const fetchUsers = useCallback(async () => {
     try {
       setLoading(true);
-     const response = await fetch(`https://lead-skill-system-i3u1bxgih-ashiks-projects-65b0ba35.vercel.app/api/users`);
+     const response = await fetch(`https://lead-skill-system.vercel.app/api/users`);
       const data = await response.json();
       
       const fetchedData = data.success ? (data.data || data) : (Array.isArray(data) ? data : []);
@@ -47,7 +47,7 @@ const DashboardHome = () => {
 
   const handleUpdateStatus = async (userId, nextStatus, successMessage) => {
   try {
-    const response = await fetch(`https://lead-skill-system-i3u1bxgih-ashiks-projects-65b0ba35.vercel.app/api/users/${userId}`, {
+    const response = await fetch(`https://lead-skill-system.vercel.app/api/users/${userId}`, {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ status: nextStatus }),

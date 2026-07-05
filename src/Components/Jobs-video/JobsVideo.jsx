@@ -4,9 +4,9 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import VideoMan from "../../assets/video-man.avif";
-import VideoMan1 from "../../assets/video-man-1.avif";
-import VideoMan2 from "../../assets/video-man-2.jpg";
+import VideoMan from "../../assets/mentor erp thumbnail .jpg.jpeg";
+import VideoMan1 from "../../assets/eduacton management  software .jpg.jpeg";
+import VideoMan2 from "../../assets/thumbnail.jpg.jpeg";
 
 const videos = [
   {
@@ -94,11 +94,11 @@ const JobsVideo = () => {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-blue-400 mt-0.5">🛠️</span>
-                <span><strong className="text-white font-bold">সম্পূর্ণ টেকনিক্যাল সাপোর্ট:</strong> সফটওয়্যার মেইনটেইন্যান্স, কাস্টমাইজেশন ও সার্ভার ম্যানেজমেন্টের দায়িত্ব আমাদের।</span>
+                <span><strong className="text-white font-bold">সম্পূর্ণ টেকনিক্যাল সাপোর্ট:</strong>সফটওয়্যার মেইনটেইন্যান্স, কাস্টমাইজেশন ও সার্ভার ম্যানেজমেন্টের দায়িত্ব আমাদের।</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-blue-400 mt-0.5">📊</span>
-                <span><strong className="text-white font-bold">মার্কেটিং ও সেলস মেটেরিয়ালস:</strong> আপনার এলাকায় বিজনেস গ্রোথ বাড়ানোর জন্য লিফলেট, ব্যানার ও সেলস গাইডলাইন দেওয়া হবে।</span>
+                <span><strong className="text-white font-bold">মার্কেটিং ও সেলস মেটেরিয়ালস:</strong> এলাকায় বিজনেস গ্রোথ বাড়ানোর জন্য লিফলেট, ব্যানার ও সেলস গাইডলাইন আমাদের এখান থেকে দেওয়া হবে।</span>
               </li>
             </ul>
           </div>

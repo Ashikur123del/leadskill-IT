@@ -38,7 +38,7 @@ const SkillsSection = () => {
         <div className="flex flex-col gap-y-6">
           {[
             {
-              title: "5,000+ Educational Institute",
+              title: "+20 Educational Institute",
               text: "Lead Skil IT implemented MentorERP, a nationwide Education Management System, streamlining academic and administrative operations across schools, colleges, and madrasahs in Bangladesh.",
               icon: <GraduationCap size={48} color="#4f46e5" />,
             },

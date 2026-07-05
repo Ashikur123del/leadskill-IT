@@ -67,7 +67,7 @@ const CareersJobsAll = () => {
     const formData = { name, phone, whatsapp, profession: selectedProfession, division: selectedDivision, district: selectedDistrict, thana: selectedThana, area };
 
     try {
-      const response = await fetch('http://localhost:8000/api/users', {
+      const response = await fetch('https://lead-skill-system.vercel.app/api/users', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -109,9 +109,9 @@ const CareersJobsAll = () => {
           <div className="w-full lg:w-1/2 flex">
             <div className="w-full bg-white p-6 md:p-10 rounded-[32px] shadow-[0_30px_60px_-15px_rgba(15,23,42,0.15)] border border-slate-100/80 flex flex-col justify-between transform transition-all duration-500 hover:translate-y-[-4px]">
               <div>
-                <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-2 tracking-tight">বিজনেস পার্টনার হোন</h2>
+                <h2 className="text-2xl md:text-3xl font-black text-slate-900 mb-2 tracking-tight">বিজনেস ডেভেলপমেন্ট পার্টনার</h2>
                 <p className="text-slate-600 text-xs md:text-sm font-semibold mb-6">
-                  আপনার এলাকার শিক্ষাপ্রতিষ্ঠানগুলোকে ডিজিটালাইজড করতে এবং MentorERP-এর অফিশিয়াল ফ্র্যাঞ্চাইজি/পার্টনার হিসেবে নতুন আয়ের উৎস তৈরি করতে আজই ফর্মটি পূরণ করুন। আমাদের রিজিওনাল পার্টনার স্লট সীমিত।
+                  আপনার এলাকার শিক্ষাপ্রতিষ্ঠানগুলোকে ডিজিটালাইজড করতে এবং Mentorerp-এর অফিশিয়াল বিজনেস ডেভেলপমেন্ট পার্টনার হিসেবে নতুন আয়ের উৎস তৈরি করতে আজই ফর্মটি পূরণ করুন। আমাদের রিজিওনাল পার্টনার স্লট সীমিত।
                 </p>
                 <div className="h-[1px] w-full bg-gradient-to-r from-blue-500/30 via-slate-200 to-transparent mb-6"></div>
 
