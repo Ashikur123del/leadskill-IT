@@ -68,7 +68,8 @@ const TeamCard = ({ member, index }) => {
             <div className="relative mb-6 w-full max-w-[220px] mx-auto">
                 <div className={`absolute -inset-4 rounded-full bg-gradient-to-r ${gradient} blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700`}></div>
                 <div className="absolute -inset-2 rounded-full border-2 border-transparent group-hover:border-pink-500/30 transition-all duration-700 group-hover:rotate-180"></div>
-                <div className="relative w-full aspect-square rounded-full overflow-hidden border-[6px] border-[#1a1a1a] bg-[#1a1a1a] z-10 ring-1 ring-gray-800 group-hover:ring-pink-500/50 transition-all duration-500 shadow-2xl shadow-black/50">
+                {/* 🔥 FIX: Use aspect-[3/4] instead of aspect-square to avoid cropping portrait images */}
+                <div className="relative w-full aspect-[3/4] rounded-full overflow-hidden border-[6px] border-[#1a1a1a] bg-[#1a1a1a] z-10 ring-1 ring-gray-800 group-hover:ring-pink-500/50 transition-all duration-500 shadow-2xl shadow-black/50">
                     {imageError ? (
                         <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] text-gray-500 text-xs font-bold">
                             {member.name.split(' ')[0]}
@@ -110,7 +111,7 @@ const OurTeamMember = () => {
     return (
         <section className="bg-[#111111] text-white py-10 md:py-24 px-6 min-h-screen overflow-hidden">
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col lg:flex-row justify-between items-end mb-16 md:mb-20 gap-10">
+                <div className="flex flex-col lg:flex-row justify-between items-end mb-16 md:mb-20 gap-4">
                     <div className="max-w-xl mx-auto lg:mx-0">
                         <span className="text-[10px] font-bold px-3 py-1 rounded-sm uppercase tracking-widest mb-4 inline-block bg-gradient-to-r from-pink-500 to-amber-500 text-white">
                             Our Team Member
@@ -141,25 +142,24 @@ const OurTeamMember = () => {
                 </div>
 
                 <div className="relative">
-                   <Swiper
-    onBeforeInit={(swiper) => { swiperRef.current = swiper; }}
-    modules={[Autoplay, Navigation]}
-    spaceBetween={30} // স্পেস একটু বাড়িয়ে দিলাম
-    loop={true}
-    speed={800}
-    autoplay={{ 
-        delay: 3000, 
-        disableOnInteraction: false 
-    }}
-    // এখানে ৪টি কার্ডের সেটিংস দেওয়া হলো:
-    slidesPerView={1} // ডিফল্ট ১টি (মোবাইল)
-    breakpoints={{
-        640: { slidesPerView: 2 },
-        768: { slidesPerView: 3 },
-        1024: { slidesPerView: 4 }, // ডেস্কটপে ৪টি দেখাবে
-    }}
-    className="team-swiper"
->
+                    <Swiper
+                        onBeforeInit={(swiper) => { swiperRef.current = swiper; }}
+                        modules={[Autoplay, Navigation]}
+                        spaceBetween={30}
+                        loop={true}
+                        speed={800}
+                        autoplay={{ 
+                            delay: 3000, 
+                            disableOnInteraction: false 
+                        }}
+                        slidesPerView={1}
+                        breakpoints={{
+                            640: { slidesPerView: 2 },
+                            768: { slidesPerView: 3 },
+                            1024: { slidesPerView: 4 },
+                        }}
+                        className="team-swiper"
+                    >
                         {teamMembers.map((member, index) => (
                             <SwiperSlide key={member.id} className="py-4">
                                 <TeamCard member={member} index={index} />
